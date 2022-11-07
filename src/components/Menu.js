@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 
 export default function Menu(){
     return (
         <div className="menu-container">
-            <Navbar/>
+            <button className="nav-toggle" type="button"></button>
         </div>
     )
 }
