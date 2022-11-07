@@ -1,6 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        pink 0%,
+        pink 50%,
+        red 0%,
+        red 50%
+    );
+}
+
+.menu-icon{
+    font-size: 2.5rem;
+}
+
+
+
+.menu-container{
+    height: 100%;
 }
 
 .navbar{
@@ -8,7 +30,6 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    border: 1px solid black;
-    width: 85%;
-    
+    width: 90%;
+    margin-top: 70px;
 }
