@@ -37,3 +37,27 @@ body{
 .nav-toggle:active{
     transform: translateX(-50%) scale(0.96);
 }
+
+.nav-toggle > span{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%) scale(0.96);
+    color: #E1D89F;
+    font-size: 2rem;
+    opacity: 0;
+    transition: transform;
+    transition-timing-function: ease-in;
+    transition-duration: 200ms;
+}
+
+.menu-container:not([open = "false"]) > .nav-toggle:hover > .open{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.menu-container:not([open = "false"]) > .nav-toggle > .close{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
