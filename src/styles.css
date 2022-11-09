@@ -5,7 +5,7 @@ body{
     margin: 0;
     
 }
- 
+
 
 .menu-container{
     width: 100%;
@@ -21,8 +21,6 @@ body{
 
 .menu-container.close{
     transform: translateY(0%);
-
-
 }
 
 .menu-container.open{
@@ -80,5 +78,39 @@ body{
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.05);
 }
+
+
+
+.nav-link-img{
+    width: max(20vh, 400px);
+    aspect-ratio: 1.8/ 1;
+    margin-top: 0.75rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    
+}
+
+.navbar-container{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.nav-links > h2 {
+    margin: 0;
+}
+
+.nav-links{
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
+    padding: 0rem clamp(1rem 2vw, 2rem);
+    transform: translateY(0%) scale(0.9);
+    transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+}
+
 
 
