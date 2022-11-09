@@ -15,11 +15,13 @@ export default function Menu(){
         }
 
     return (
-        <div className="menu-container">
-            <button className="nav-toggle" type="button" onClick={toggleNav}>
-                {!open ? <span className="open"><HiMenu/></span> : <div></div>}
-                {open ? <span className="close"><HiX/></span> : <div></div>}
-            </button>
-        </div>
+
+            <div className="menu-container">
+                <button className="nav-toggle " type="button" onClick={toggleNav}>
+                    {!open ? <i className="open"><HiMenu/></i> : <></>}
+                    {open ? <i className="close"><HiX/></i> : <></>}
+                </button>
+            </div>
+
     )
 }
