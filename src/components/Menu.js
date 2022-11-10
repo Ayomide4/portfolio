@@ -15,23 +15,19 @@ export default function Menu(){
         setOpen(open => !open)
 
         const menuElement = document.querySelector(".menu-container") //we create the var here so we can store the element after its created
-        const navElement = document.querySelector("navbar-container")
 
 
         if(open){
             menuElement.classList.add("close")
             menuElement.classList.remove("open")
-
         }
         else{
             
             menuElement.classList.add("open")
             menuElement.classList.remove("close")
-
-
         }
 
-        }
+    }
 
     return (
 

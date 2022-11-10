@@ -108,9 +108,10 @@ body{
     gap: clamp(1rem, 2vw, 2rem);
     margin-top: clamp(2rem, 2vw, 3rem);
     padding: 0rem clamp(1rem 2vw, 2rem);
-    transform: translateY(0%) scale(0.9);
+    transform: translateY(70%) scale(0.9);
     transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
 }
 
-
-
+.nav-links.open{
+    transform: translateY(0);
+}
