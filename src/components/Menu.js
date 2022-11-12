@@ -1,15 +1,18 @@
-import React from "react";
+import {useState} from "react";
 import Navbar from "./Navbar"
-import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
 import { HiX } from "react-icons/hi";
+
+
+//TODO:
+// - change loading color to match deisgn
 
 
 
 
 export default function Menu(){
     const [open, setOpen] = useState(false)
-    
+
     const toggleMenu = () => {
         setOpen(open => !open)
         const menuElement = document.querySelector(".menu-container") //we create the var here so we can store the element after its created
@@ -28,10 +31,13 @@ export default function Menu(){
         <div>
             <main className="menu-container close"></main>
             <button className="nav-toggle " type="button" onClick={toggleMenu}>
-                    {!open ? <i className="open" ><HiMenu/></i> : <></>}
-                    {open ? <i className="close"><HiX/></i> : <></>}
+                    {!open && <i className="open" ><HiMenu/></i>}
+                    {open && <i className="close"><HiX/></i>}
             </button>
-            <Navbar open={open} toggleMenu={() => toggleMenu}/>
+            <Navbar open={open} toggleMenu={() => toggleMenu}/> 
         </div>
+            
+            
     )
 }
+

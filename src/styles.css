@@ -91,6 +91,7 @@ html, body {
 /*NAVIGATION*/
 
 
+
 nav{
     height: 50vh;
     width: 100%;
@@ -99,6 +100,7 @@ nav{
     bottom: 0px;
     z-index: 1;
     overflow: hidden;
+
 }
 
 .nav-item-title {
