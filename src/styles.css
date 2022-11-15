@@ -3,17 +3,12 @@ body{
     width: 100%;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    
 }
 
-html, body {
-    margin: 0; height: 100%; overflow: hidden
-}
-
-
-/*MENU*/
 
 .menu-container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("images/test2.jpg");
     background-position: center 0%;
@@ -39,6 +34,7 @@ html, body {
     position: fixed;
     z-index: 3;
     left: 50%;
+    right: 50%;
     top: 84%;
     transform: translateX(-50%);
     background: #C45BAA;
@@ -51,8 +47,6 @@ html, body {
     transition-property: transform;
     transition-duration: 200ms;
 }
-
-
 
 .nav-toggle:hover{
     transform: translateX(-50%) scale(1.05);
@@ -87,73 +81,37 @@ html, body {
 
 
 
-
-/*NAVIGATION*/
-
-
-
-nav{
-    height: 50vh;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: 1;
-    overflow: hidden;
-
-}
-
-.nav-item-title {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-}
-
-
 .nav-link-img{
-    width: max(15vw, 325px);
+    width: max(20vh, 400px);
     aspect-ratio: 1.8/ 1;
     margin-top: 0.75rem;
     object-fit: cover;
     border-radius: 0.5rem;
+    
 }
 
+.navbar-container{
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.nav-links > h2 {
+    margin: 0;
+}
 
 .nav-links{
     display: flex;
     gap: clamp(1rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
     padding: 0rem clamp(1rem 2vw, 2rem);
     transform: translateY(70%) scale(0.9);
     transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
-    width: 100vw;
-    justify-content: space-around;
-    margin-bottom: -1rem;
-    height: 50vh;
-    overflow: hidden;
 }
-
-.nav-item > a {
-    text-decoration: none;
-    color: black;
-    margin-top: 200px;
-}
-
-.nav-item:hover .nav-link-img {
-    transform: scale(.97);
-    transition-timing-function: ease;
-    transition-duration: 400ms;
-}
-
-
-.nav-item:hover .nav-item-title {
-    transform: translateX(5%);
-    transition-timing-function: ease;
-    transition-duration: 300ms;
-}
-
 
 .nav-links.open{
-    transform: translateY(0%) scale(1);
+    transform: translateY(0);
 }
-
-
