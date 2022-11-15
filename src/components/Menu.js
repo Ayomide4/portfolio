@@ -32,7 +32,15 @@ export default function Menu(){
     return (
 
         <div>
-            <main className="menu-container close"></main>
+            
+            <main className="menu-container close">
+                <p className="title">AYOMIDE OMOTOSHO</p>
+                <p className="subtitle">Full Stack Developer</p>
+                <p className="location">Based in Dallas, TX</p>
+                <p className="side-title">Dedicated to making exceptional digital experiences</p>
+                <img className="portrait" src="https://images.pexels.com/photos/3692600/pexels-photo-3692600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ayomide Omotosho"></img>
+            
+            </main>
             <button className="nav-toggle " type="button" onClick={toggleMenu}>
                     {!open ? <i className="open" ><HiMenu/></i> : <></>}
                     {open ? <i className="close"><HiX/></i> : <></>}
