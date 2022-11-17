@@ -7,8 +7,6 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 
 
-
-
 export default function Menu(){
     const [open, setOpen] = useState(false)
     const [isDarkMode, setDarkMode] = useState(false);
@@ -32,7 +30,6 @@ export default function Menu(){
 
         const menuElement = document.querySelector(".menu-container") //we create the var here so we can store the element after its created
 
-
         if(open){
             menuElement.classList.add("close")
             menuElement.classList.remove("open")
@@ -50,7 +47,7 @@ export default function Menu(){
                 <p className="title">AYOMIDE OMOTOSHO</p>
                 <p className="subtitle">Full Stack Developer</p>
                 <p className="location">Based in Dallas, TX</p>
-                <p className="side-title">Dedicated to making exceptional digital experiences</p>
+                <p className="side-title">Dedicated to developoing exceptional digital experiences</p>
                 <img className="portrait" src="https://images.pexels.com/photos/3692600/pexels-photo-3692600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ayomide Omotosho"></img>
                 <DarkModeSwitch className="dark-mode" checked={isDarkMode} onChange={toggleDarkMode} size={35}/>
             </main>

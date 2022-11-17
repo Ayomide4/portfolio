@@ -15,11 +15,11 @@ export default function Navbar(props){
                     <img className="nav-link-img" src="https://images.pexels.com/photos/14344661/pexels-photo-14344661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></img>
                 </a>
                 <a className="nav-link-item" href="/about">
-                    <h2 className="nav-link-title">About Me</h2>
+                    <h2 className="nav-link-title">About</h2>
                     <img className="nav-link-img" src="https://images.pexels.com/photos/14344661/pexels-photo-14344661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></img>
                 </a>
                 <a className="nav-link-item" href="/contact">
-                    <h2 className="nav-link-title">Contact Me</h2>
+                    <h2 className="nav-link-title">Contact</h2>
                     <img className="nav-link-img" src="https://images.pexels.com/photos/14344661/pexels-photo-14344661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></img>
                 </a>
             </nav>
