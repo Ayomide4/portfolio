@@ -1,11 +1,12 @@
 import React from "react";
+import DarkMode from "./DarkMode";
 
 const Contact = () => {
     return (
         <div className="page-container">
             <div className="contact-container">
+                <DarkMode/>
                 <p className="contact-title">CONTACT.</p>
-
                 <p className="direct">Get in touch or shoot me an email directly on aomotosho4@gmail.com</p>
                 <form>
                     <div className="field">

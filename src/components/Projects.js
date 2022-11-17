@@ -1,5 +1,6 @@
 import React from "react";
-
+import DarkMode from "./DarkMode";
+import Navbar from "./Navbar";
 
 const Projects = () => {
     return (
@@ -12,6 +13,8 @@ const Projects = () => {
                     <div className="project-item"></div>
                     <div className="project-item"></div>
                 </div>
+                <DarkMode/>
+                <Navbar/>
             </div>
         </div>
     )

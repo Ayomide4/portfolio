@@ -20,7 +20,6 @@ body{
 }
 
 
-
 .menu-container.light{
     width: 100%;
     height: 100vh;
@@ -106,7 +105,7 @@ body{
     right: 50%;
     top: 84%;
     transform: translateX(-50%);
-    background: #856D47;
+    background: #C28741;
     border: none;
     outline: none;
     border-radius: 5rem;
@@ -154,11 +153,12 @@ body{
     height: 50vh;
     width: 100%;
     position: absolute;
-    background-color: #212327;
+    background-color: #000;
     left: 0px;
     bottom: 0px;
     z-index: 1;
     overflow: hidden;
+    border: 1px solid red;
 }
 
 .nav-links{
@@ -169,6 +169,7 @@ body{
     width: 100vw;
     height: 50vh;
     justify-content: space-around;
+    border: 1px solid red;
 }
 
 .nav-link-img{
@@ -220,32 +221,29 @@ body{
 }
 
 .project-container{
-    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .page-title{
-    position: absolute;
-    left: 10%;
-    top: 4rem;
     font-weight: 700;
     font-size: 2.5rem;
     color: black;
-
+    margin: 6.5rem 0 0 0;
 }
 
 .project-items-container{
-    margin-top: 6rem;
     display: grid;
     grid-template-columns: 0.1fr 0.1fr;
-    gap: 1rem;
+    gap: 5rem;
     place-items: center;
     width: 60%;
     height: 80%;
-    position: absolute;
-    left: 20%;
-    top: 5rem;
-    padding-bottom: 2rem;
-    background-color: #FFFDFC;
+    margin: 2rem 0 0 8rem;
+
 }
 
 .project-item{
@@ -253,7 +251,6 @@ body{
     height: 350px;
     background-color: #000;
     border-radius: 10px;
-
 }
 
 /*ABOUT PAGE*/
