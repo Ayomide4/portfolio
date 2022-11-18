@@ -10,7 +10,7 @@ export default function Navbar(){
     const toggleMenu = () => {
         setOpen(open => !open)
 
-        const menuElement = document.querySelector(".menu-container") //we create the var here so we can store the element after its created
+        const menuElement = document.querySelector(".toggle-container") //we create the var here so we can store the element after its created
 
         if(open){
             menuElement.classList.add("close")
@@ -26,9 +26,10 @@ export default function Navbar(){
     return (
         <div>
             <button className="nav-toggle " type="button" onClick={toggleMenu}>
-                    {!open ? <i className="open" ><HiMenu/></i> : <></>}
-                    {open ? <i className="close"><HiX/></i> : <></>}
+                {!open ? <i className="open" ><HiMenu/></i> : <></>}
+                {open ? <i className="close"><HiX/></i> : <></>}
             </button>
+            
             <div className='navbar-container close' >
                 <nav className={open ? "nav-links open" : "nav-links close"}>
                     <a className="nav-link-item" href="/">
